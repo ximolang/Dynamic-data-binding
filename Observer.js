@@ -85,7 +85,6 @@ class Observer {
     log(array)
     for (let i = 0; i < array.length; i++) {
       if (array[i] === '__ob__') continue
-      // log('!!!!! ->' + value + '' + array[i] + '' + value[array[i]] )
       defineReactive(value, array[i], value[array[i]])
     }
   }
