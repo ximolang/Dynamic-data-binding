@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>动态数据绑定</title>
 </head>
+
 <body>
-  <script src="Observer.js"></script>
+  <script src="ob.js"></script>
+  <!-- <script>
+    let data = {
+      name: 'Molang',
+      age: 22,
+      skills: {
+        code: 'js',
+        life: 'painting',
+      },
+    }
+
+    let app = new Observer(data)
+
+    app.$watch('skills', (name) => {
+      log('我的技能变了！变成' + name + '了!')
+    })
+    app.$watch('age', (age) => {
+      log('我的年龄变了！变成' + age + '了!')
+    })
+  </script> -->
 </body>
+
 </html>
